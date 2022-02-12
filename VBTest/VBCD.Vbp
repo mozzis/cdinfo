@@ -1,0 +1,17 @@
+Form=frmCD.Frm
+Reference=*\G{BEF6E001-A874-101A-8BBA-00AA00300CAB}#2.0#0#C:\WINNT\System32\Olepro32.dll#Standard OLE Types
+Object={A393BE4C-2FBD-11D0-B939-000000000000}#1.0#0; CDInfo.dll
+ProjWinSize=195,807,196,128
+ProjWinShow=2
+IconForm="frmCD"
+ExeName32="VBCD.exe"
+Name="Project1"
+HelpContextID="0"
+StartMode=0
+VersionCompatible32="0"
+MajorVer=1
+MinorVer=0
+RevisionVer=0
+AutoIncrementVer=0
+ServerSupportFiles=0
+VersionCompanyName="Microsoft"

@@ -1,0 +1,80 @@
+--------------------Configuration: CDInfo - Win32 Release--------------------
+Begining build with project "E:\Code\cdinfo\CDInfo.dsp", at root.
+Active configuration is Win32 (x86) Dynamic-Link Library (based on Win32 (x86) Dynamic-Link Library)
+
+Project's tools are:
+			"32-bit C/C++ Compiler for 80x86" with flags "/nologo /MT /W4 /GX /O1 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_MBCS" /D "_USRDLL" /Fp".\Release/CDInfo.pch" /Yu"stdafx.h" /Fo".\Release/" /Fd".\Release/" /FD /c "
+			"OLE Type Library Maker" with flags "/nologo /D "NDEBUG" /mktyplib203 /win32 "
+			"Win32 Resource Compiler" with flags "/l 0x409 /fo".\Release/CDInfo.res" /d "NDEBUG" "
+			"Browser Database Maker" with flags "/nologo /o".\Release/CDInfo.bsc" "
+			"COFF Linker for 80x86" with flags "winmm.lib comctl32.lib /nologo /subsystem:windows /dll /incremental:no /pdb:".\Release/CDInfo.pdb" /machine:I386 /def:".\CDInfo.def" /out:".\Release/CDInfo.dll" /implib:".\Release/CDInfo.lib" "
+			"Custom Build" with flags ""
+			"<Component 0xa>" with flags ""
+
+Creating temp file "C:\WIN\TEMP\RSPF195.BAT" with contents <@echo off
+midl /Oic /h CDInfo.h /iid CDInfo_i.c CDInfo.idl
+>
+Creating command line "C:\WIN\TEMP\RSPF195.BAT" 
+Creating command line "rc.exe /l 0x409 /fo".\Release/CDInfo.res" /d "NDEBUG" "E:\Code\cdinfo\CDInfo.rc"" 
+Performing Custom Build Step
+Microsoft (R) MIDL Compiler Version 3.01.75  
+Copyright (c) Microsoft Corp 1991-1997. All rights reserved.
+Processing .\CDInfo.idl
+CDInfo.idl
+Processing c:\tools\msdev\VC\INCLUDE\oaidl.idl
+oaidl.idl
+Processing c:\tools\msdev\VC\INCLUDE\objidl.idl
+objidl.idl
+Processing c:\tools\msdev\VC\INCLUDE\unknwn.idl
+unknwn.idl
+Processing c:\tools\msdev\VC\INCLUDE\wtypes.idl
+wtypes.idl
+Processing c:\tools\msdev\VC\INCLUDE\ocidl.idl
+ocidl.idl
+Processing c:\tools\msdev\VC\INCLUDE\oleidl.idl
+oleidl.idl
+Creating temp file "C:\WIN\TEMP\RSPF1E4.TMP" with contents </nologo /MT /W4 /GX /O1 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_MBCS" /D "_USRDLL" /Fp".\Release/CDInfo.pch" /Yu"stdafx.h" /Fo".\Release/" /Fd".\Release/" /FD /c 
+"E:\Code\cdinfo\CCDInfo.cpp"
+"E:\Code\cdinfo\CDInfo.cpp"
+"E:\Code\cdinfo\CDInfo1.cpp"
+>
+Creating command line "cl.exe @C:\WIN\TEMP\RSPF1E4.TMP" 
+Creating temp file "C:\WIN\TEMP\RSPF1E5.TMP" with contents </nologo /MT /W4 /GX /O1 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_MBCS" /D "_USRDLL" /Fp".\Release/CDInfo.pch" /Yc"stdafx.h" /Fo".\Release/" /Fd".\Release/" /FD /c 
+"E:\Code\cdinfo\StdAfx.cpp"
+>
+Creating command line "cl.exe @C:\WIN\TEMP\RSPF1E5.TMP" 
+Creating temp file "C:\WIN\TEMP\RSPF1E6.TMP" with contents <winmm.lib comctl32.lib /nologo /subsystem:windows /dll /incremental:no /pdb:".\Release/CDInfo.pdb" /machine:I386 /def:".\CDInfo.def" /out:".\Release/CDInfo.dll" /implib:".\Release/CDInfo.lib" 
+.\Release\CCDInfo.obj
+.\Release\CDInfo.obj
+.\Release\CDInfo1.obj
+.\Release\StdAfx.obj
+.\Release\CDInfo.res>
+Creating command line "link.exe @C:\WIN\TEMP\RSPF1E6.TMP" 
+Creating temp file "C:\WIN\TEMP\RSPF1E7.BAT" with contents <@echo off
+regsvr32 /s /c ".\Release\CDInfo.dll"
+echo regsvr32 exec. time > ".\.\Release\regsvr32.trg"
+>
+Creating command line "C:\WIN\TEMP\RSPF1E7.BAT" 
+Compiling resources...
+Compiling...
+StdAfx.cpp
+c:\tools\msdev\VC\ATL\include\atlctl.h(473) : warning C4510: '__unnamed' : default constructor could not be generated
+c:\tools\msdev\VC\ATL\include\atlctl.h(473) : warning C4610: union '__unnamed' can never be instantiated - user defined constructor required
+c:\tools\msdev\VC\ATL\include\atlctl.h(454) : warning C4100: 'di' : unreferenced formal parameter
+c:\tools\msdev\VC\ATL\include\atlctl.cpp(301) : warning C4100: 'fClearDirty' : unreferenced formal parameter
+c:\tools\msdev\VC\ATL\include\atlwin.cpp(417) : warning C4244: '=' : conversion from 'int' to 'unsigned short', possible loss of data
+Compiling...
+CCDInfo.cpp
+CDInfo.cpp
+CDInfo1.cpp
+Generating Code...
+Linking...
+   Creating library .\Release/CDInfo.lib and object .\Release/CDInfo.exp
+LINK : warning LNK4089: all references to "ADVAPI32.dll" discarded by /OPT:REF
+Performing Custom Build Step
+RegSvr32: DllRegisterServer in .\Release\CDInfo.dll succeeded.
+
+
+
+
+CDInfo.dll - 0 error(s), 6 warning(s)
